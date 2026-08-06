@@ -9,6 +9,9 @@ Tasks:
 ●	Implement functions to add, update, remove, and calculate the average and extreme grades.'''
 
 
+from unicodedata import name
+
+
 student=[]
 grades=[]
 def add_student(name,grade):
@@ -25,7 +28,52 @@ def update_grade():
     else:
         print("Student not found.")
 
-def remove_student:
+def remove_student():
+    name=input("enter student name to remove:")
+    if name in student:
+        i=student.index(name)
+        student.pop(i)
+        grades.pop(i)
+    else:
+        print("Student not found.")
+def average_grade():
+    if len(grades) > 0:
+        print("Average Grade =", sum(grades) / len(grades))
+    else:
+        print("No students")
+
+def highest_lowest():
+    if len(grades) > 0:
+        print("Highest Grade =", max(grades))
+        print("Lowest Grade =", min(grades))
+    else:
+        print("No students")
+
+# Main Program
+while True:
+    print("\n1.Add")
+    print("2.Update")
+    print("3.Remove")
+    print("4.Average")
+    print("5.Highest & Lowest")
+    print("6.Exit")
+
+    choice = int(input("Enter choice: "))
+
+    if choice == 1:
+        add_student()
+    elif choice == 2:
+        update_grade()
+    elif choice == 3:
+        remove_student()
+    elif choice == 4:
+        average_grade()
+    elif choice == 5:
+        highest_lowest()
+    elif choice == 6:
+        break
+    else:
+        print("Invalid Choice")
 
 
 
