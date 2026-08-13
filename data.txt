@@ -1,0 +1,8 @@
+Python is a high-level, interpreted, 
+and general-purpose programming language renowned for its
+simple syntax and strong emphasis on code readability.
+Created by Guido van Rossum and first released in 1991, 
+it has grown to become one of the most popular programming languages globally.
+Maintained by the non-profit Python Software Foundation (PSF),
+the language is widely favored across fields 
+like artificial intelligence, data science, web development, and automation.
